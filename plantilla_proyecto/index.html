@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--  manejo y configuración del caché del equipo para esta página -->
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+
+    <!-- "viewport"  permite tomar y configura la pantalla --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Mecatrónica</title>
+
+    <!--  Definiciones ícono favorito --- favicon.ico --->
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="./imagenes/icon/favicon.ico" type="image/x-icon"> 
+
+    <link rel="apple-touch-icon" sizes="120x120" href="./imagenes/icon/apple-touch-icon.png">
+    <link rel="manifest" href="./imagenes/icon/site.webmanifest">
+    <link rel="mask-icon" href="./imagenes/icon/safari-pinned-tab.svg" color="#5bbad5">
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./css/styles.css?n=0">
+    <script src="./js/script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="imagenes/logo_udec_3.png" >    
+        <h1>Mi PROYECTO</h1>
+        <h2>Ingeniería Mecatrónica</h2> 
+        <br><hr><br>
+    </header>
+
+    <nav> 
+        <ul> 
+           <li><a href="index.html">Inicio</a></li> 
+           <li><a href="glosario_fundamentos_ingenieria.html">Glosario Ingeniería</a></li> 
+           <li><a href="glosario_pensamiento_algoritmico.html">Glosario Algoritmos</a></li> 
+           <li><a href="glosario_pensamiento_sistemico.html">Glosario TGS</a></li> 
+        </ul>  
+     </nav> 
+
+     <br><hr><br>
+     <p class="DefProyecto">Un sistema de riego automático para cultivos es un conjunto de dispositivos y tecnologías 
+        diseñados para controlar de manera autónoma el suministro de agua a las plantas, basándose 
+        en datos en tiempo real o programaciones preestablecidas. Su principal función es gestionar 
+        el flujo de agua a los cultivos sin intervención manual continua, ajustando el riego de acuerdo 
+        con condiciones específicas del entorno, como la humedad del suelo o la temperatura.</p>
+     <img id="imagen_articulo1" src="imagenes/fachada_sede_udec.png">
+     <br><hr><br>
+
+    <!-- Tabla de Contenidos -->
+    <DIV id="tabla-contenidos">
+        <h2>Contenido</h2>
+        <ul>
+            <li><a href="#objetivos">OBJETIVOS</a></li>
+            <li><a href="#justificacion">1. JUSTIFICACION</a>
+            <ul>
+                <li><a href="#situacion-problematica">1.1. Situación Problémica</a></li>
+                <li><a href="#justificacion-proyecto">1.2. Justificación del proyecto</a>
+                <ul>
+                    <li><a href="#Estudios-preliminares">1.2.1. Estudios preliminares</a></li>
+                    <li><a href="#Instrumentos-para-investigacion">1.2.2.	Instrumentos para investigación y levantamiento de información</a></li>
+                    <li><a href="#Encuesta">1.2.3.	Encuesta</a></li>
+                    <li><a href="#Conclusiones-encuesta">1.2.4.	Conclusiones de la encuesta</a></li>
+                    <li><a href="#Diagrama-Espina-de-Pescado">1.2.5.	Diagrama Espina de Pescado</a></li>
+                </ul></li>
+            </ul></li>
+            <li><a href="#marco-teorico">2.	MARCO TEORICO CONCEPTUAL</a>
+            <ul>
+                <li><a href="#teoria-de-proyectos">2.1.Conceptos y terminología asociada con el proyecto</a></li>
+                <li><a href="#normativa-actual">2.2. Normativa aplicable al proyecto</a></li>
+            </ul></li>
+            <li><a href="#Disciplinas">3. DISCIPLINAS QUE INTERVIENEN EN EL PROYECTO</a></li>
+      
+            <li><a href="#propuesta">4. PROPUESTA</a></li>
+            <li><a href="#Referencias-Bibliográficas">5. Referencias Bibliográficas</a>
+
+        </ul>
+    </DIV>
+
+    <!-- Contenido Principal -->
+    <main>
+        <section id="objetivos">
+            <h2 class="Titulo1">Objetivos</h2>
+            <!-- ---------------------------------------------->
+            <p class="Parrafo1">Desarrollar un sistema de riego automático que optimice el uso del agua en cultivos mediante 
+                la implementación de tecnologías de sensores y control automatizado, contribuyendo a la 
+                eficiencia en el manejo de recursos hídricos y la mejora de la productividad agrícola.</p>
+            <ul class="Parrafo1">
+                <li>Diseñar una arquitectura de control automatizado basada en microcontroladores que integre 
+                    sensores de humedad del suelo, temperatura ambiente y lluvia para la toma de decisiones 
+                    precisa en el riego de cultivos.</li>
+                <li>Implementar un sistema de monitoreo en tiempo real de las condiciones ambientales y del 
+                    suelo que permita la recolección y procesamiento de datos para la optimización del riego. </li>
+                <li>Desarrollar un mecanismo de control automatizado para la regulación del flujo de agua 
+                    mediante electroválvulas, que responda a los parámetros establecidos por los sensores y las 
+                    necesidades específicas del cultivo. </li>
+                <li>Establecer protocolos de programación que permitan la adaptación del sistema a diferentes 
+                    tipos de cultivos y condiciones ambientales, considerando variables como la humedad óptima 
+                    y los ciclos de riego. </li>
+                <li>Integrar tecnologías IoT para el monitoreo y control remoto del sistema, facilitando la 
+                    supervisión y ajuste de parámetros de riego desde dispositivos móviles o computadoras.</li>
+                <li>Validar la eficiencia del sistema mediante la medición del consumo de agua y la comparación 
+                    con métodos tradicionales de riego, estableciendo indicadores de ahorro y optimización de 
+                    recursos.</li>
+                <li>Diseñar una interfaz de usuario intuitiva que permita la configuración y monitoreo del 
+                    sistema, facilitando su operación por parte de los agricultores sin necesidad de conocimientos 
+                    técnicos especializados.</li>
+                <li>Implementar medidas de seguridad y respaldo que garanticen el funcionamiento continuo del 
+                    sistema y la protección de los cultivos en caso de fallos técnicos o condiciones ambientales 
+                        adversas.</li>
+            </ul>
+            <button onclick="scrollToTop()">Volver a la Tabla de Contenidos</button>
+        </section>
+
+        <section id="justificacion">
+            <h2 class="Titulo1">1. Justificación</h2>
+            <!-- ---------------------------------------------->
+
+            <article id="situacion-problematica" class="SubCapituloTema">
+                <h3 class="Subtitulo1">1.1. Situacion problematica</h3>
+                <!-- ---------------------------------------------->
+
+                <p class="Parrafo1">Una problemática que el proyecto de un sistema de riego automático para cultivos puede 
+                    solucionar es la ineficiencia en el uso del agua en la agricultura, especialmente en regiones 
+                    donde este recurso es limitado o su disponibilidad es variable. En muchos sistemas de riego 
+                    tradicionales, el agua se aplica de manera manual o mediante métodos poco precisos, lo que 
+                    puede resultar en desperdicio de agua, sobre-riego (que puede causar encharcamiento y 
+                    erosión del suelo) o sub-riego (que puede estresar a las plantas, reduciendo su productividad).</p>
+                <p class="Parrafo1">Esta situación genera varios problemas, como:</p>
+                <ul class="Parrafo1">
+                    <li>Agotamiento de fuentes hídricas debido al uso excesivo e indiscriminado de agua.</li>
+                    <li>Costos elevados por el mal uso de agua y energía.</li>
+                    <li>Impacto negativo en los cultivos debido a un riego inadecuado, lo que afecta la 
+                        calidad y cantidad de la producción agrícola.</li>
+                </ul>
+            </article>
+
+            <article id="justificacion-proyecto" class="SubCapituloTema">
+                <h3 class="Subtitulo1">1.2. Justificación del proyecto</h3>
+                <!-- ---------------------------------------------->
+                <h4 class="Subtitulo2">Justificación técnica</h4>
+                <p class="Parrafo1">La implementación de un sistema de riego automático representa una evolución necesaria en 
+                    las prácticas agrícolas actuales, fundamentada en varios aspectos técnicos relevantes:</p>
+                <ul>
+                    <li>
+                        <strong>Optimización de recursos hídricos</strong>
+                    </li>
+                    <ul class="Parrafo1">
+                        <li>Los métodos tradicionales de riego presentan ineficiencias significativas en el uso del agua, 
+                            con pérdidas considerables por evaporación y distribución irregular</li>
+                        <li>La automatización mediante sensores y controladores permite una dosificación precisa del 
+                            agua, ajustándose a las necesidades reales de los cultivos </li>
+                        <li>Los sistemas de monitoreo en tiempo real posibilitan la detección temprana de problemas y 
+                            la toma de decisiones inmediata</li>
+                    </ul>
+                    <li>
+                        <strong>Avances Tecnológicos Disponibles  </strong>
+                    </li>
+                    <ul class="Parrafo1">
+                        <li>La madurez actual de tecnologías como sensores de humedad, microcontroladores y 
+                            electroválvulas hace viable la implementación de sistemas automatizados </li>
+                        <li>La integración con IoT permite un control y monitoreo remoto, facilitando la gestión de 
+                            cultivos en áreas extensas </li>
+                        <li>Las tecnologías de comunicación inalámbrica posibilitan la creación de redes de sensores 
+                            eficientes y escalables</li>
+                    </ul>
+                </ul>
+
+                <h4 class="Subtitulo2">Justificación económica</h4>
+                <p class="Parrafo1">
+                    La inversión en un sistema de riego automático se justifica desde el punto de vista económico por:
+                </p>
+                <ul class="Parrafo1">
+                    <li><strong>Reducción de Costos Operativos</strong></li>
+                    <ul>
+                        <li>Disminución significativa en el consumo de agua y energía</li>
+                        <li>Reducción de la mano de obra necesaria para las tareas de riego</li>
+                        <li>Minimización de pérdidas por sobre-riego o riego insuficiente</li>
+                    </ul>
+                    <li><strong>Mejora en la Productividad</strong></li>
+                    <ul>
+                        <li>Optimización de las condiciones de crecimiento de los cultivos</li>
+                        <li>Reducción de pérdidas por estrés hídrico</li>
+                        <li>Mayor uniformidad en el desarrollo de las plantas</li>
+                    </ul>
+                    <li><strong>Retorno de Inversión</strong></li>
+                    <ul>
+                        <li>El ahorro en recursos hídricos y mano de obra permite recuperar la inversión inicial</li>
+                        <li>Incremento en la calidad y cantidad de la producción agrícola</li>
+                        <li>Reducción de costos de mantenimiento a largo plazo</li>
+                    </ul>
+                </ul>
+
+                <h4 class="Subtitulo2">Justificación ambiental</h4>
+                <p class="Parrafo1">El proyecto se alinea con los principios de sostenibilidad ambiental por:</p>
+                <ul class="Parrafo1">
+                    <li><strong>Conservación de Recursos Naturales</strong></li>
+                    <ul>
+                        <li>Uso eficiente del agua, un recurso cada vez más escaso</li>
+                        <li>Reducción de la huella hídrica en la agricultura</li>
+                        <li>Prevención de la erosión del suelo por sobre-riego</li>
+                    </ul>
+                    <li><strong>Adaptación al Cambio Climático</strong></li>
+                    <ul>
+                        <li>Mayor resiliencia ante condiciones climáticas variables</li>
+                        <li>Adaptabilidad a patrones de lluvia irregulares</li>
+                        <li>Contribución a la agricultura sostenible</li>
+                    </ul>
+                    <li><strong>Cumplimiento Normativo</strong></li>
+                    <ul>
+                        <li>Alineación con la Ley 99 de 1993 de Desarrollo Sostenible</li>
+                        <li>Conformidad con regulaciones ambientales vigentes</li>
+                        <li>Apoyo a las políticas de conservación de recursos hídricos</li>
+                    </ul>
+                </ul>
+
+                <h4 class="Subtitulo2">Justificación social</h4>
+                <p class="Parrafo1">El impacto social del proyecto se refleja en:</p>
+                <ul class="Parrafo1">
+                    <li>
+                        <strong>Mejora en las Condiciones de Trabajo</strong>
+                    </li>
+                    <ul class="Parrafo1">
+                        <li>Reducción del esfuerzo físico en tareas de riego</li>
+                        <li>Disminución de la exposición a condiciones climáticas adversas</li>
+                        <li>Optimización del tiempo del agricultor</li>
+                    </ul>
+                    <li>
+                        <strong>Desarrollo de Capacidades</strong>
+                    </li>
+                    <ul class="Parrafo1">
+                        <li>Fomento de la adopción de nuevas tecnologías en el sector agrícola</li>
+                        <li>Capacitación en el uso de sistemas automatizados</li>
+                        <li>Modernización de las prácticas agrícolas tradicionales</li>
+                    </ul>
+                    <li>
+                        <strong>Beneficios para la Comunidad</strong>
+                    </li>
+                    <ul class="Parrafo1">
+                        <li>Contribución a la seguridad alimentaria</li>
+                        <li>Uso más responsable de recursos comunitarios</li>
+                        <li>Ejemplo de implementación de tecnologías sostenibles</li>
+                    </ul>
+                </ul>
+            </article>
+           
+            <button onclick="scrollToTop()">Volver a la Tabla de Contenidos</button>
+        </section>
+
+
+
+        <section id="marco-teorico">
+            <h2 class="Titulo1">2.	MARCO TEORICO</h2>
+            <!-- ---------------------------------------------->
+            <article id="teoria-de-proyectos" class="SubCapituloTema">
+                <h3 class="Subtitulo1">2.1.Conceptos y terminología asociada con el proyecto</h3>
+            <!-- ---------------------------------------------->
+             
+                
+            </article>
+
+            <article id="normativa-actual" class="SubCapituloTema">
+                <h3 class="Subtitulo1">2.2. Normativa aplicable al proyecto</h3>
+            <!-- ---------------------------------------------->
+
+            <p class="Parrafo2">Explicación detallada -.......</p>
+        </article>
+
+            <button onclick="scrollToTop()">Volver a la Tabla de Contenidos</button>
+
+        </section>
+
+
+
+    </main>
+</body>
+</html>
