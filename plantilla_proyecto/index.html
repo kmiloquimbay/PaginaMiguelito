@@ -251,6 +251,67 @@
                     </ul>
                 </ul>
             </article>
+
+            <article id="Encuesta" class="SubCapituloTema">
+                <h3 class="Subtitulo1">Encuesta Implementación de Sistema de Riego Automático</h3>
+                <form>
+                    <label for="cultivo">1. ¿Qué tipo de cultivo maneja principalmente?</label><br>
+                    <input type="checkbox" id="hortalizas" name="cultivo" value="Hortalizas"> Hortalizas<br>
+                    <input type="checkbox" id="frutales" name="cultivo" value="Frutales"> Frutales<br>
+                    <input type="checkbox" id="cereales" name="cultivo" value="Cereales"> Cereales<br>
+                    <input type="checkbox" id="flores" name="cultivo" value="Flores"> Flores<br>
+                    <input type="checkbox" id="otro" name="cultivo" value="Otro"> Otro (especifique): <input type="text" name="otroCultivo"><br><br>
+
+                    <label for="area">2. ¿Cuál es el tamaño aproximado de su área de cultivo?</label><br>
+                    <input type="radio" id="menos1" name="area" value="Menos de 1 hectárea"> Menos de 1 hectárea<br>
+                    <input type="radio" id="1-5" name="area" value="1-5 hectáreas"> 1-5 hectáreas<br>
+                    <input type="radio" id="5-20" name="area" value="5-20 hectáreas"> 5-20 hectáreas<br>
+                    <input type="radio" id="mas20" name="area" value="Más de 20 hectáreas"> Más de 20 hectáreas<br><br>
+
+                    <label for="metodo">3. ¿Qué método de riego utiliza actualmente?</label><br>
+                    <input type="radio" id="manual" name="metodo" value="Riego manual"> Riego manual<br>
+                    <input type="radio" id="aspersión" name="metodo" value="Riego por aspersión"> Riego por aspersión<br>
+                    <input type="radio" id="goteo" name="metodo" value="Riego por goteo"> Riego por goteo<br>
+                    <input type="radio" id="automatizado" name="metodo" value="Sistema de riego automatizado"> Sistema de riego automatizado<br>
+                    <input type="radio" id="otroMetodo" name="metodo" value="Otro"> Otro (especifique): <input type="text" name="otroMetodoEspecifico"><br><br>
+
+                    <label for="interes">4. En una escala del 1 al 5, donde 1 es "Nada interesado" y 5 es "Muy interesado", ¿qué tan interesado estaría en implementar un sistema de riego automático en su cultivo?</label><br>
+                    <input type="radio" id="1" name="interes" value="1"> 1<br>
+                    <input type="radio" id="2" name="interes" value="2"> 2<br>
+                    <input type="radio" id="3" name="interes" value="3"> 3<br>
+                    <input type="radio" id="4" name="interes" value="4"> 4<br>
+                    <input type="radio" id="5" name="interes" value="5"> 5<br><br>
+
+                    <label for="beneficios">5. ¿Cuál de los siguientes beneficios de un sistema de riego automático le resulta más atractivo? (Seleccione hasta dos opciones)</label><br>
+                    <input type="checkbox" id="ahorroAgua" name="beneficios" value="Ahorro de agua"> Ahorro de agua<br>
+                    <input type="checkbox" id="reduccionManoObra" name="beneficios" value="Reducción de mano de obra"> Reducción de mano de obra<br>
+                    <input type="checkbox" id="mejoraProductividad" name="beneficios" value="Mejora en la productividad del cultivo"> Mejora en la productividad del cultivo<br>
+                    <input type="checkbox" id="controlPreciso" name="beneficios" value="Control preciso de la irrigación"> Control preciso de la irrigación<br>
+                    <input type="checkbox" id="monitoreoRemoto" name="beneficios" value="Monitoreo remoto del sistema"> Monitoreo remoto del sistema<br><br>
+
+                    <label for="preocupacion">6. ¿Cuál es su principal preocupación al considerar la implementación de un sistema de riego automático? (Seleccione una opción)</label><br>
+                    <input type="radio" id="costo" name="preocupacion" value="Costo inicial de instalación"> Costo inicial de instalación<br>
+                    <input type="radio" id="complejidad" name="preocupacion" value="Complejidad técnica del sistema"> Complejidad técnica del sistema<br>
+                    <input type="radio" id="mantenimiento" name="preocupacion" value="Mantenimiento y reparaciones"> Mantenimiento y reparaciones<br>
+                    <input type="radio" id="confiabilidad" name="preocupacion" value="Confiabilidad del sistema"> Confiabilidad del sistema<br>
+                    <input type="radio" id="otroPreocupacion" name="preocupacion" value="Otro"> Otro (especifique): <input type="text" name="otraPreocupacion"><br><br>
+
+                    <label for="inversion">7. ¿Cuánto estaría dispuesto a invertir en un sistema de riego automático por hectárea?</label><br>
+                    <input type="radio" id="menos5" name="inversion" value="Menos de 5 millones de pesos"> Menos de 5 millones de pesos<br>
+                    <input type="radio" id="5-10" name="inversion" value="Entre 5 y 10 millones de pesos"> Entre 5 y 10 millones de pesos<br>
+                    <input type="radio" id="10-20" name="inversion" value="Entre 10 y 20 millones de pesos"> Entre 10 y 20 millones de pesos<br>
+                    <input type="radio" id="mas20" name="inversion" value="Más de 20 millones de pesos"> Más de 20 millones de pesos<br><br>
+
+                    <label for="caracteristicas">8. ¿Qué características adicionales le gustaría que tuviera un sistema de riego automático? (Pregunta abierta)</label><br>
+                    <textarea id="caracteristicas" name="caracteristicas" rows="4" cols="50"></textarea><br><br>
+
+                    <label for="informacion">9. ¿Estaría interesado en recibir más información sobre sistemas de riego automático?</label><br>
+                    <input type="radio" id="si" name="informacion" value="Sí"> Sí<br>
+                    <input type="radio" id="no" name="informacion" value="No"> No<br><br>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </article>
            
             <button onclick="scrollToTop()">Volver a la Tabla de Contenidos</button>
         </section>
@@ -551,7 +612,7 @@
         <section class="Disciplinas">
             <h2 class="Titulo1">3. DISCIPLINAS QUE INTERVIENEN EN EL PROYECTO</h2>
             <ul>
-                <li>
+                <li>    
                     <h2 class="Titulo2">
                         Ingeniería electrónica
                     </h2>
