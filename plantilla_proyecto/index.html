@@ -344,13 +344,160 @@
                 y al agotamiento de los acuíferos. Por tanto, los sistemas de riego automatizados contribuyen 
                 a una gestión sostenible del agua, minimizando el impacto negativo sobre los ecosistemas 
                 circundantes (Postel, 1999).</p>
+            
 
+            <h3 class="Subtitulo1">Conceptos causa – efecto para el desarrollo de diagrama espina de pescado</h3>
+            <p class="Parrafo1">El análisis de causa-efecto, también conocido como diagrama de espina de pescado o diagrama de Ishikawa, es una herramienta que permite identificar las causas principales de un problema y sus efectos. A continuación, se presentan los conceptos causa-efecto relevantes para el desarrollo del sistema de riego automático:</p>
+            <ul class="Parrafo1">
+                <li><strong>1. Mano de Obra (Personal):</strong>
+                    <ul>
+                        <li>Falta de capacitación técnica</li>
+                        <li>Error humano en la programación</li>
+                        <li>Alta rotación de personal</li>
+                        <li>Fatiga por trabajo manual excesivo</li>
+                    </ul>
+                </li>
+                <li><strong>2. Medio Ambiente:</strong>
+                    <ul>
+                        <li>Variaciones climáticas impredecibles</li>
+                        <li>Diferentes tipos de suelo</li>
+                        <li>Evaporación excesiva</li>
+                        <li>Patrones de lluvia irregulares</li>
+                    </ul>
+                </li>
+                <li><strong>3. Métodos:</strong>
+                    <ul>
+                        <li>Riego en horarios inadecuados</li>
+                        <li>Falta de programación estructurada</li>
+                        <li>Métodos obsoletos de riego</li>
+                        <li>Ausencia de protocolos estandarizados</li>
+                    </ul>
+                </li>
+                <li><strong>4. Máquinas (Equipos):</strong>
+                    <ul>
+                        <li>Equipos desactualizados</li>
+                        <li>Fallas en sistemas de bombeo</li>
+                        <li>Válvulas defectuosas</li>
+                        <li>Falta de mantenimiento preventivo</li>
+                    </ul>
+                </li>
+                <li><strong>5. Materiales:</strong>
+                    <ul>
+                        <li>Tuberías de baja calidad</li>
+                        <li>Sensores inadecuados</li>
+                        <li>Conexiones deficientes</li>
+                        <li>Desgaste prematuro de componentes</li>
+                    </ul>
+                </li>
+                <li><strong>6. Medición:</strong>
+                    <ul>
+                        <li>Falta de monitoreo continuo</li>
+                        <li>Sensores descalibrados</li>
+                        <li>Medición imprecisa de variables</li>
+                        <li>Ausencia de datos históricos</li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="Parrafo1">Efectos principales del problema:</p>
+            <ul class="Parrafo1">
+                <li>Desperdicio de agua</li>
+                <li>Costos operativos elevados</li>
+                <li>Baja productividad en cultivos</li>
+                <li>Daños a las plantas por riego inadecuado</li>
+                <li>Mayor impacto ambiental</li>
+                <li>Pérdidas económicas</li>
+                <li>Uso ineficiente de recursos</li>
+                <li>Tiempo perdido en operaciones manuales</li>
+            </ul>
+            <p class="Parrafo1">Este análisis de causa-efecto ayuda a:</p>
+            <ul class="Parrafo1">
+                <li>Identificar las áreas críticas que necesitan mejora</li>
+                <li>Desarrollar soluciones específicas para cada causa raíz</li>
+                <li>Priorizar las intervenciones según su impacto</li>
+                <li>Diseñar un sistema más eficiente y automatizado</li>
+                <li>Establecer medidas preventivas</li>
+                <li>Mejorar la toma de decisiones en el proyecto</li>
+            </ul>
+
+            <h3 class="Subtitulo1">Posibles componentes del proyecto</h3>
+            <h4 class="Subtitulo2">1. Microcontrolador</h4>
+            <p class="Parrafo1">El microcontrolador es el cerebro del sistema de riego automatizado. Se trata de un circuito integrado programable capaz de ejecutar las instrucciones grabadas en su memoria. Está compuesto por varios bloques funcionales, que son: procesador, memoria y periféricos de entrada/salida.</p>
+            <p class="Parrafo1">En el contexto de un sistema de riego automatizado, el microcontrolador se encarga de:</p>
+            <ul class="Parrafo1">
+                <li>Procesar la información recibida de los diversos sensores.</li>
+                <li>Tomar decisiones basadas en la programación y los datos recibidos.</li>
+                <li>Controlar los actuadores como válvulas y bombas.</li>
+                <li>Manejar la comunicación con interfaces de usuario o sistemas remotos.</li>
+            </ul>
+            <p class="Parrafo1">Ejemplos comunes de microcontroladores utilizados en estos sistemas son Arduino y Raspberry Pi. Arduino es especialmente popular en proyectos de automatización debido a su facilidad de uso y amplia comunidad de soporte. Raspberry Pi, por otro lado, ofrece mayor potencia de procesamiento y la capacidad de ejecutar un sistema operativo completo, lo que puede ser beneficioso para sistemas más complejos o que requieren interfaces de usuario avanzadas.</p>
+
+            <h4 class="Subtitulo2">2. Sensores de humedad del suelo</h4>
+            <p class="Parrafo1">Los sensores de humedad del suelo son dispositivos diseñados para medir el contenido de agua presente en el suelo. Estos sensores son cruciales en un sistema de riego automatizado, ya que proporcionan datos precisos sobre cuándo es necesario regar.</p>
+            <p class="Parrafo1">Existen varios tipos de sensores de humedad del suelo, entre los que se incluyen:</p>
+            <ul class="Parrafo1">
+                <li><strong>Sensores resistivos:</strong> Miden la resistencia eléctrica entre dos electrodos insertados en el suelo. La resistencia disminuye a medida que aumenta la humedad.</li>
+                <li><strong>Sensores capacitivos:</strong> Miden la constante dieléctrica del suelo, que varía con el contenido de agua.</li>
+                <li><strong>Sensores de neutrones:</strong> Utilizan una fuente radiactiva para medir la cantidad de neutrones lentos en el suelo, que está relacionada con el contenido de agua.</li>
+            </ul>
+            <p class="Parrafo1">En sistemas de riego automatizado, los sensores resistivos y capacitivos son los más comunes debido a su bajo costo y facilidad de integración con microcontroladores.</p>
+
+            <h4 class="Subtitulo2">3. Sensores de temperatura ambiente</h4>
+            <p class="Parrafo1">Los sensores de temperatura ambiente son dispositivos que miden la temperatura del aire circundante. En un sistema de riego automatizado, estos sensores desempeñan un papel importante en la optimización del uso del agua y la salud de las plantas.</p>
+            <p class="Parrafo1">La temperatura ambiente afecta directamente a la tasa de evapotranspiración de las plantas, que es la combinación de la evaporación del agua del suelo y la transpiración de las plantas. Al conocer la temperatura ambiente, el sistema puede ajustar los ciclos de riego para compensar las pérdidas de agua más rápidas en días calurosos o reducir el riego en días más frescos.</p>
+            <p class="Parrafo1">Existen varios tipos de sensores de temperatura utilizados en estos sistemas:</p>
+            <ul class="Parrafo1">
+                <li><strong>Termistores:</strong> Resistencias que cambian su valor en función de la temperatura.</li>
+                <li><strong>Termopares:</strong> Generan un voltaje proporcional a la diferencia de temperatura entre dos metales diferentes.</li>
+                <li><strong>Sensores de temperatura integrados:</strong> Circuitos integrados que proporcionan una salida digital o analógica proporcional a la temperatura.</li>
+            </ul>
+            <p class="Parrafo1">En sistemas de riego automatizado, los sensores de temperatura integrados como el DS18B20 son populares debido a su precisión, bajo costo y fácil integración con microcontroladores.</p>
+
+            <h4 class="Subtitulo2">4. Sensores de lluvia</h4>
+            <p class="Parrafo1">Los sensores de lluvia son dispositivos diseñados para detectar la presencia de precipitación. En un sistema de riego automatizado, estos sensores son esenciales para evitar el riego innecesario durante o después de lluvias naturales, lo que ayuda a conservar agua y prevenir el exceso de riego.</p>
+            <p class="Parrafo1">Existen principalmente dos tipos de sensores de lluvia utilizados en sistemas de riego:</p>
+            <ul class="Parrafo1">
+                <li><strong>Sensores de cubeta basculante:</strong> Consisten en un embudo que recoge la lluvia y la dirige hacia una pequeña cubeta. Cuando la cubeta se llena, se inclina, vaciándose y activando un interruptor que envía una señal al controlador.</li>
+                <li><strong>Sensores de conductividad:</strong> Utilizan dos electrodos expuestos. Cuando el agua de lluvia cae sobre estos electrodos, completa un circuito eléctrico, lo que indica la presencia de lluvia.</li>
+            </ul>
+            <p class="Parrafo1">Estos sensores pueden configurarse para detectar diferentes niveles de lluvia, permitiendo que el sistema de riego se ajuste en función de la intensidad de la precipitación.</p>
+
+            <h4 class="Subtitulo2">5. Electroválvulas para control de flujo de agua</h4>
+            <p class="Parrafo1">Las electroválvulas, también conocidas como válvulas solenoides, son dispositivos electromecánicos diseñados para controlar el flujo de líquidos o gases. En un sistema de riego automatizado, las electroválvulas son componentes críticos que permiten el control preciso del flujo de agua hacia diferentes zonas del área de cultivo.</p>
+
+            <h3 class="Subtitulo1">Funcionamiento:</h3>
+            <ul class="Parrafo1"></ul>
+                <li>Cuando se aplica una corriente eléctrica a la bobina de la electroválvula, se genera un campo magnético que mueve un émbolo interno.</li>
+                <li>Este movimiento abre o cierra el paso del agua, dependiendo del diseño de la válvula (normalmente abierta o normalmente cerrada).</li>
+                <li>Al cesar la corriente eléctrica, un resorte devuelve el émbolo a su posición original.</li>
+                <li>En sistemas de riego, se utilizan principalmente dos tipos de electroválvulas:
+                    <ul>
+                        <li>Válvulas de acción directa: Adecuadas para sistemas de baja presión y caudal.</li>
+                        <li>Válvulas servocomandadas: Más eficientes para sistemas de alta presión y gran caudal.</li>
+                    </ul>
+                </li>
+                <li>La selección de la electroválvula adecuada depende de factores como el caudal requerido, la presión del sistema, el voltaje de operación y la compatibilidad con el tipo de agua utilizada (potable, tratada, etc.).</li>
+            </ul>
+
+            <h3 class="Subtitulo1">Criterios a tener en cuenta para el proyecto</h3>
+            <ul class="Parrafo1">
+                <li>Eficiencia en el uso del agua</li>
+                <li>Automatización y reducción de la intervención manual</li>
+                <li>Adaptabilidad a diferentes tipos de cultivos y condiciones del suelo</li>
+                <li>Integración de sensores de humedad del suelo y temperatura ambiente</li>
+                <li>Incorporación de sensores de lluvia para evitar riego innecesario</li>
+                <li>Uso de microcontroladores para el procesamiento de datos y toma de decisiones</li>
+                <li>Implementación de electroválvulas para el control preciso del flujo de agua</li>
+                <li>Compatibilidad con tecnologías IoT para monitoreo y control remoto</li>
+                <li>Sostenibilidad ambiental y reducción del impacto ecológico</li>
+                <li>Relación costo-beneficio para los agricultores</li>
+            </ul>
                 
             </article>
 
             <article id="normativa-actual" class="SubCapituloTema">
                 <h3 class="Subtitulo1">2.2. Normativa aplicable al proyecto</h3>
-            <!-- ---------------------------------------------->
+                <!-- ---------------------------------------------->
+                 
 
             <p class="Parrafo2">Explicación detallada -.......</p>
         </article>
